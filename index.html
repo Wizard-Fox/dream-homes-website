@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Homes Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dream Homes</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Dream Home</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Enter location, city, or ZIP code">
+                <button>Search</button>
+            </div>
+        </section>
+
+        <section class="property-filters">
+            <h2>Filter Properties</h2>
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <div class="range-inputs">
+                        <input type="number" placeholder="Min">
+                        <input type="number" placeholder="Max">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Bedrooms</label>
+                    <select>
+                        <option>Any</option>
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Bathrooms</label>
+                    <select>
+                        <option>Any</option>
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Square Feet</label>
+                    <div class="range-inputs">
+                        <input type="number" placeholder="Min">
+                        <input type="number" placeholder="Max">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Property Type</label>
+                    <select>
+                        <option>Any</option>
+                        <option>Single Family</option>
+                        <option>Condo</option>
+                        <option>Townhouse</option>
+                        <option>Multi Family</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Year Built</label>
+                    <div class="range-inputs">
+                        <input type="number" placeholder="Min">
+                        <input type="number" placeholder="Max">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-listings">
+            <h2>Featured Properties</h2>
+            <div class="property-grid">
+                <!-- Property cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="property-details">
+            <div class="property-info">
+                <h2>Property Details</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <i class="fas fa-bed"></i>
+                        <span>Bedrooms</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-bath"></i>
+                        <span>Bathrooms</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>Square Feet</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-car"></i>
+                        <span>Garage</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Year Built</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-home"></i>
+                        <span>Property Type</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@dreamhomes.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Scan QR Code</h3>
+                <div id="qrcode"></div>
+                <p>Scan to visit our website</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dream Homes Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
